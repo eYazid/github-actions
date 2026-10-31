@@ -6,10 +6,8 @@ app = FastAPI()
 
 @app.get("/")
 def get_shipment():
-    return {
-        "content": "",
-        "shipments": []
-    }
+    return {"content": "", "shipments": []}
+
 
 @app.get("/scalar", include_in_schema=False)
 def get_scalar():
