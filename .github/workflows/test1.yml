@@ -1,10 +1,9 @@
 name: first workflow
-
 on: push
 
 jobs:
   echo-hello:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: Say hello
         run: echo "hello world"
