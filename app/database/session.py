@@ -1,7 +1,7 @@
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
-from models.shipment_models import Base
+from app.models.shipment_models import Base
 
-from database.config import DatabaseSettings
+from app.database.config import DatabaseSettings
 
 db_settings = DatabaseSettings()
 
